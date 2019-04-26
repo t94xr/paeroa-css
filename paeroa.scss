@@ -1,0 +1,186 @@
+// Variables
+
+// fonts
+$font-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, "Work Sans", Droid Sans, Helvetica Neue, sans-serif;
+$font-serif: "Playfair Display", Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+$font-mono: "Share Tech Mono", Liberation Mono, Courier New, monospace;
+
+// colors
+
+$mainBrandColor: #F060D6;
+$secondaryFocus: #4C9FEB;
+$fadedhighlight: #F1F3F4;
+
+// primary colors
+
+$red: #EA4335;
+$blue: #4285F4;
+$yellow: #FBBC05;
+
+// secondary colors
+
+$green: #34A853;
+$grey:  #747474;
+$black: #000000;
+
+
+// sizes
+
+$container: 1200px;
+
+// responsive design
+
+$maxwidth: 100%;
+
+// font sizes
+
+$h1size:  38pt;
+$h2size:  28pt;
+$h3size:  18pt;
+$h4size:  16pt;
+$h5size:  16pt;
+$h6size:  16pt;
+
+$body-padding: 50px;
+$heading-padding: 40px;
+$article-padding: 80px;
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Cantarell:400,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+
+/* basic strcture */
+html, body {
+  font-family: $font-sans;
+  font-size: 14pt;
+  background: #edeff0;
+  color: #576366;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  padding: $body-padding;
+}
+section {
+  max-width:  $container;
+  margin: 0px auto;
+
+    animation: panel-fade-up 0.4s ease;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+    border-radius: 4px;
+}
+header {
+  padding: $heading-padding;
+}
+header h1 {
+  text-align: center;
+}
+nav {
+  text-align: center;
+}
+article {
+  padding-left: $article-padding;
+  padding-right: $article-padding;
+}
+main {}
+aside {}
+
+/* misc */
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 { font-family: $font-serif; }
+h1 {
+  font-size: $h1size;
+  font-weight: 900;
+}
+h2 {
+  font-size: $h2size;
+}
+h3 {
+  font-size: $h3size;
+}
+h4 {
+  font-size: $h4size;
+}
+h5 {
+  font-size: $h5size;
+}
+h6 {
+  font-size: $h6size; 
+}
+
+p {}
+strong {}
+small {}
+em {}
+img {}
+
+ul {}
+ol {}
+li {}
+blockquote { display: block; }
+blockquote cite {
+  display: block;
+  padding-top: 10px;
+}
+hr {}
+pre, code {
+  font-family: $font-mono;
+}
+pre {
+  background-color: #fafafa;
+  border: 1px solid #c1c0bd;
+  border-radius: 3px;
+  color: #41403e;
+  display: block;
+  line-height: 1.5;
+  overflow-x: auto;
+  padding: 1em;
+  white-space: pre;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+code {
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  color: #0071de;
+  padding: 2px 4px
+}
+pre code { 
+  background: none;
+  color: #41403e;
+}
+kbd {
+  background-color: #41403e;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 80%;
+  padding: 2px 4px
+}
+samp {}
+var {}
+address {}
+mark {}
+del {}
+ins {}
+q {}
+details {}
+details summary {}
+abbr {}
+acronym {}
+
+/* media */
+audio {}
+video {}
+figure {}
+figure img { max-width: $maxwidth; }
+figcaption {}
