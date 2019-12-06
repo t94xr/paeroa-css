@@ -1,110 +1,286 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Cantarell:400,700");
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
-/* basic strcture */
-html, body {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, "Work Sans", Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 14pt;
-  background: #edeff0;
-  color: #576366;
-  -webkit-font-smoothing: antialiased; }
+@charset "UTF-8";
+/* Display Fonts */
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraSans:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn:400,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,200,300,400,500,600,700&display=swap");
+/* Code Fonts */
+@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css");
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap&subset=latin-ext");
+/* ## accent-color:  #428bca; */
+/* Main CSS Code */
+html {
+  font-family: "Inter", Fira Sans, IBM Plex Sans, Work Sans, system-ui, sans-serif;
+  line-height: 1.90em;
+  font-size: calc(1em * 1.1);
+  color: #444444;
+  letter-spacing: -0.75px;
+  text-rendering: optimizeLegibility;
+  /* Open Digits */
+  font-feature-settings: 'ss01' 1;
+  /* Disambiguation */
+  font-feature-settings: 'ss02' 1;
+  /* Auto Fractions */
+  font-feature-settings: 'frac' 1;
+  /* Slashed Zero Digit */
+  font-feature-settings: 'zero' 1;
+  /* Upper-case i with Serif */
+  font-feature-settings: 'cv08' 1;
+  /* Flat top Three Digit */
+  font-feature-settings: 'cv09' 1;
+  /* Open Digits */
+  font-feature-settings: 'cv11' 1;
+  /* Stylistic Alternatives */
+  font-feature-settings: 'salt' 1; }
 
 body {
-  padding: 50px; }
+  background-color: #F7F7F7;
+  padding-top: 50px; }
 
-section {
-  max-width: 1200px;
-  margin: 0px auto;
-  animation: panel-fade-up 0.4s ease;
-  position: relative;
-  background: #fff;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
-  border-radius: 4px; }
+main {
+  max-width: 1280px;
+  margin: auto;
+  background-color: #fff;
+  padding-left: 40px;
+  padding-right: 40px; }
 
 header {
-  padding: 40px; }
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px; }
 
 header h1 {
-  text-align: center; }
+  font-weight: 800;
+  font-size: 3em;
+  letter-spacing: -3px;
+  padding: 30px 0 0 0;
+  border: none; }
+
+header h2 {
+  font-weight: 200;
+  font-size: 1.5em;
+  letter-spacing: -2.5px; }
+
+header p {
+  font-weight: 200;
+  font-size: 1em; }
 
 nav {
-  text-align: center; }
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 20px; }
 
-article {
-  padding-left: 80px;
-  padding-right: 80px; }
+nav a {
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px; }
 
-/* misc */
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif; }
+img {
+  max-width: 100%; }
+
+li {
+  padding-left: 10px; }
+
+a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 400;
+  display: inline-block;
+  border-bottom: 2px solid #F65314;
+  padding-bottom: 0;
+  line-height: 1em; }
+
+a:hover {
+  border-bottom: 3px solid #F65314; }
 
 h1 {
-  font-size: 38pt;
-  font-weight: 900; }
+  font-size: calc(1em * 2.5);
+  font-weight: 700;
+  letter-spacing: -2px;
+  padding: 20px 0px 10px 20px;
+  margin: 10px 0 20px 0;
+  border-left: 7px solid #F65314; }
 
 h2 {
-  font-size: 28pt; }
+  font-size: calc(1em * 2.25);
+  font-weight: 600;
+  letter-spacing: -2px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
 
 h3 {
-  font-size: 18pt; }
+  font-size: calc(1em * 2.2);
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  padding-bottom: 0;
+  margin: 30px 0 30px 0; }
 
 h4 {
-  font-size: 16pt; }
+  font-size: calc(1em * 1.75);
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
 
 h5 {
-  font-size: 16pt; }
+  font-size: calc(1em * 1.75);
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
 
 h6 {
-  font-size: 16pt; }
+  font-size: calc(1em * 1.5);
+  font-weight: 200;
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+footer {
+  border-top: 1px gray solid;
+  margin-top: 50px;
+  padding: 5px;
+  font-size: small; }
+
+aside {
+  width: 40%;
+  padding-left: 1.25rem;
+  margin-left: 1.5rem;
+  float: right;
+  border-left: 8px solid #F65314;
+  color: #F65314;
+  font-weight: 300; }
+
+aside > p {
+  margin: .5rem; }
 
 blockquote {
-  display: block; }
+  font-size: 1em;
+  width: 85%;
+  margin: 50px auto;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #F65314;
+  line-height: 1.6;
+  position: relative;
+  background: #f5f5f5; }
 
-blockquote cite {
+blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #F65314;
+  font-size: 5em;
+  position: absolute;
+  left: 10px;
+  top: -10px; }
+
+blockquote::after {
+  content: ''; }
+
+blockquote span {
   display: block;
-  padding-top: 10px; }
+  color: #333333;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 1em; }
 
-pre, code {
-  font-family: "Share Tech Mono", Liberation Mono, Courier New, monospace; }
+figure {
+  float: right;
+  width: 350px;
+  padding: 10px;
+  margin: 30px 0 30px 20px;
+  border: 1px solid #F65314; }
+
+figure img {
+  text-align: center;
+  display: block;
+  margin: 0 auto; }
+
+figure figcaption {
+  padding-top: 10px;
+  font-size: small;
+  line-height: 1.5em;
+  font-weight: 300; }
 
 pre {
-  background-color: #fafafa;
-  border: 1px solid #c1c0bd;
-  border-radius: 3px;
-  color: #41403e;
-  display: block;
-  line-height: 1.5;
-  overflow-x: auto;
-  padding: 1em;
-  white-space: pre;
-  word-break: break-all;
-  word-wrap: break-word; }
+  background-color: #282b2e;
+  padding: 25px;
+  color: white;
+  line-height: 1.5em;
+  font-size: 11pt;
+  overflow: auto;
+  letter-spacing: normal; }
 
-code {
-  background-color: #f2f2f2;
-  border-radius: 3px;
-  color: #0071de;
-  padding: 2px 4px; }
+pre, pre *, code {
+  font-family: "Space Mono", Hack, Fira Code, monospace; }
 
-pre code {
-  background: none;
-  color: #41403e; }
+samp {
+  letter-spacing: normal;
+  font-size: 11pt; }
+
+time {
+  opacity: 0.6; }
+
+dl dt {
+  font-weight: 700; }
+
+dl dd {
+  font-weight: 300;
+  font-style: italic; }
+
+/* Add " (PDF)" text after links that go to PDFs */
+a[href$=".pdf"]:after {
+  content: " (PDF)" url("pdficon.png"); }
+
+/* If file size specified as data attribute, use that too */
+a[href$=".pdf"][data-size]:after {
+  content: " (PDF, " attr(data-size) ")" url("pdficon.png"); }
+
+address {
+  border-left: 8px solid #F65314;
+  padding: 0.5em 12.5px 0.5em 25px;
+  width: 85%;
+  margin: 20px; }
 
 kbd {
-  background-color: #41403e;
+  font-family: "Space Mono", Hack, Fira Code, monospace;
+  background-color: #eee;
   border-radius: 3px;
-  color: #fff;
-  font-size: 80%;
-  padding: 2px 4px; }
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: 0.95em;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap; }
 
-/* media */
-figure img {
-  max-width: 100%; }
+q {
+  font-style: italic;
+  quotes: "“" "”"; }
+
+table {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border: 2px solid #F65314;
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+table td, table th {
+  border: 2px solid #F65314;
+  padding: 3px; }
+
+table thead {
+  background-color: #F65314; }
 
 /*# sourceMappingURL=paeroa.css.map */

@@ -1,186 +1,289 @@
-// Variables
+@charset "UTF-8";
 
-// fonts
-$font-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, "Work Sans", Droid Sans, Helvetica Neue, sans-serif;
-$font-serif: "Playfair Display", Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
-$font-mono: "Share Tech Mono", Liberation Mono, Courier New, monospace;
+@import 'scss/fonts';
+@import 'scss/variables';
 
-// colors
+/* Main CSS Code */
+html {
+  font-family: $sans-serif-fonts ;
+	line-height: 1.90em;
+  font-size: calc(#{$base-font-size} * 1.1);
+  color: #444444;
+  letter-spacing: -0.75px;
 
-$mainBrandColor: #F060D6;
-$secondaryFocus: #4C9FEB;
-$fadedhighlight: #F1F3F4;
+  text-rendering: optimizeLegibility;
 
-// primary colors
-
-$red: #EA4335;
-$blue: #4285F4;
-$yellow: #FBBC05;
-
-// secondary colors
-
-$green: #34A853;
-$grey:  #747474;
-$black: #000000;
-
-
-// sizes
-
-$container: 1200px;
-
-// responsive design
-
-$maxwidth: 100%;
-
-// font sizes
-
-$h1size:  38pt;
-$h2size:  28pt;
-$h3size:  18pt;
-$h4size:  16pt;
-$h5size:  16pt;
-$h6size:  16pt;
-
-$body-padding: 50px;
-$heading-padding: 40px;
-$article-padding: 80px;
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Cantarell:400,700');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900');
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
-
-
-/* basic strcture */
-html, body {
-  font-family: $font-sans;
-  font-size: 14pt;
-  background: #edeff0;
-  color: #576366;
-  -webkit-font-smoothing: antialiased;
+  /* Open Digits */
+  font-feature-settings: 'ss01' 1;
+  /* Disambiguation */
+  font-feature-settings: 'ss02' 1;
+  /* Auto Fractions */
+  font-feature-settings: 'frac' 1;
+  /* Slashed Zero Digit */
+  font-feature-settings: 'zero' 1;
+  /* Upper-case i with Serif */
+  font-feature-settings: 'cv08' 1;
+  /* Flat top Three Digit */
+  font-feature-settings: 'cv09' 1;
+  /* Open Digits */
+  font-feature-settings: 'cv11' 1;
+  /* Stylistic Alternatives */
+  font-feature-settings: 'salt' 1;
 }
 body {
-  padding: $body-padding;
+  background-color: #F7F7F7;
+  padding-top: 50px;
 }
-section {
-  max-width:  $container;
-  margin: 0px auto;
-
-    animation: panel-fade-up 0.4s ease;
-    position: relative;
-    background: #fff;
-    box-shadow: 0 2px 0 rgba(0,0,0,0.06);
-    border-radius: 4px;
+main {
+	max-width: 1280px;
+	margin: auto;
+  background-color: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 header {
-  padding: $heading-padding;
+	text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
 }
 header h1 {
-  text-align: center;
+	font-weight: weight(extra-bold);
+	font-size: 3em;
+  letter-spacing: -3px;
+  padding: 30px 0 0 0;
+  border: none;
+}
+header h2 {
+  font-weight: weight(extra-light);
+	font-size: 1.5em;
+  letter-spacing: -2.5px;
+}
+header p {
+	font-weight: weight(extra-light);
+	font-size: 1em;
 }
 nav {
-  text-align: center;
+  text-transform: uppercase;
+	font-size: 1em;
+  font-weight: weight(bold);
+  padding: 20px;
 }
-article {
-  padding-left: $article-padding;
-  padding-right: $article-padding;
+nav a {
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-main {}
-aside {}
 
-/* misc */
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 { font-family: $font-serif; }
+
+
+
+img {
+	max-width: 100%;
+}
+
+li {
+	padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: weight(regular);
+  display: inline-block;
+  border-bottom: 2px solid $accent-color;
+  padding-bottom: 0;
+  line-height: 1em;
+}
+a:hover {
+  border-bottom: 3px solid $accent-color;
+}
+
 h1 {
-  font-size: $h1size;
-  font-weight: 900;
+  font-size: calc(#{$base-font-size} * 2.5);
+  font-weight: weight(bold);
+  letter-spacing: -2px;
+  padding: 20px 0px 10px 20px;
+  margin: 10px 0 20px 0;
+  border-left: 7px solid $accent-color;
 }
 h2 {
-  font-size: $h2size;
+  font-size: calc(#{$base-font-size} * 2.25);
+  font-weight: weight(semi-bold);
+  letter-spacing: -2px;
+  padding: 0;
+  margin: 30px 0 30px 0;
 }
 h3 {
-  font-size: $h3size;
+  font-size: calc(#{$base-font-size} * 2.2);
+  font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding-bottom: 0;
+  margin: 30px 0 30px 0;
 }
 h4 {
-  font-size: $h4size;
+  font-size: calc(#{$base-font-size} * 1.75);
+  font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
 }
 h5 {
-  font-size: $h5size;
+  font-size: calc(#{$base-font-size} * 1.75);
+  font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
 }
 h6 {
-  font-size: $h6size; 
+  font-size: calc(#{$base-font-size} * 1.5);
+  font-weight: weight(extra-light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
 }
 
-p {}
-strong {}
-small {}
-em {}
-img {}
-
-ul {}
-ol {}
-li {}
-blockquote { display: block; }
-blockquote cite {
-  display: block;
-  padding-top: 10px;
+.uppercase {
+  text-transform: uppercase;
 }
-hr {}
-pre, code {
-  font-family: $font-mono;
+
+
+footer {
+	border-top: 1px gray solid;
+	margin-top: 50px;
+	padding: 5px;
+	font-size: small;
+}
+
+aside {
+    width: 40%;
+    padding-left: 1.25rem;
+    margin-left: 1.5rem;
+    float: right;
+    border-left: 8px solid $accent-color;
+    color: $accent-color;
+    font-weight: weight(light);
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+blockquote{
+  font-size: 1em;
+  width:85%;
+  margin:50px auto;
+  font-style: italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left: 8px solid $accent-color ;
+  line-height:1.6;
+  position: relative;
+  background:#f5f5f5;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color: $accent-color;
+  font-size:5em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: weight(bold);
+  margin-top:1em;
+}
+
+figure {
+	float: right;
+	width: 350px;
+	padding: 10px;
+  margin: 30px 0 30px 20px;
+	border: 1px solid $accent-color;
+}
+figure img {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+figure figcaption {
+	padding-top: 10px;
+	font-size: small;
+	line-height: 1.5em;
+	font-weight: weight(light);
 }
 pre {
-  background-color: #fafafa;
-  border: 1px solid #c1c0bd;
-  border-radius: 3px;
-  color: #41403e;
-  display: block;
-  line-height: 1.5;
-  overflow-x: auto;
-  padding: 1em;
-  white-space: pre;
-  word-break: break-all;
-  word-wrap: break-word;
+	background-color: rgb(40,43,46);
+	padding: 25px;
+	color: white;
+	line-height: 1.5em;
+	font-size: 11pt;
+	overflow: auto;
+  letter-spacing: normal;
 }
-code {
-  background-color: #f2f2f2;
-  border-radius: 3px;
-  color: #0071de;
-  padding: 2px 4px
+pre, pre *, code {
+    font-family: $code-fonts;
 }
-pre code { 
-  background: none;
-  color: #41403e;
+samp {
+  letter-spacing: normal;
+  font-size: 11pt;
 }
-kbd {
-  background-color: #41403e;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 80%;
-  padding: 2px 4px
-}
-samp {}
-var {}
-address {}
-mark {}
-del {}
-ins {}
-q {}
-details {}
-details summary {}
-abbr {}
-acronym {}
 
-/* media */
-audio {}
-video {}
-figure {}
-figure img { max-width: $maxwidth; }
-figcaption {}
+
+
+time {
+  opacity: 0.6;
+}
+
+dl dt {
+  font-weight: weight(bold);
+}
+dl dd {
+  font-weight: weight(light);
+  font-style: italic;
+}
+
+/* Add " (PDF)" text after links that go to PDFs */
+a[href$=".pdf"]:after { content: " (PDF)" url("pdficon.png"); }
+
+/* If file size specified as data attribute, use that too */
+a[href$=".pdf"][data-size]:after { content: " (PDF, " attr(data-size) ")" url("pdficon.png"); }
+
+address {
+	border-left: 8px solid $accent-color;
+	padding:0.5em 12.5px 0.5em 25px;
+	width:85%;
+	margin: 20px
+
+}
+
+kbd {
+    font-family: $code-fonts ;
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.95em;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+q {
+	font-style: italic;
+  quotes: "“" "”";
+}
+
+@import 'scss/tables';
+@import 'scss/extras';
