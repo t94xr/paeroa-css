@@ -10,7 +10,6 @@
 @import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css");
 @import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css");
 @import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap&subset=latin-ext");
-/* ## accent-color:  #428bca; */
 /* Main CSS Code */
 html {
   font-family: "Inter", Fira Sans, IBM Plex Sans, Work Sans, system-ui, sans-serif;
@@ -102,12 +101,12 @@ a {
   color: #444444;
   font-weight: 400;
   display: inline-block;
-  border-bottom: 2px solid #F65314;
+  border-bottom: 2px solid #2ecc71;
   padding-bottom: 0;
   line-height: 1em; }
 
 a:hover {
-  border-bottom: 3px solid #F65314; }
+  border-bottom: 3px solid #2ecc71; }
 
 h1 {
   font-size: calc(1em * 2.25);
@@ -115,7 +114,7 @@ h1 {
   letter-spacing: -2px;
   padding: 20px 0px 10px 20px;
   margin: 10px 0 20px 0;
-  border-left: 7px solid #F65314; }
+  border-left: 7px solid #2ecc71; }
 
 h2 {
   font-size: calc(1em * 2.0);
@@ -165,8 +164,8 @@ aside {
   padding-left: 1.25rem;
   margin-left: 1.5rem;
   float: right;
-  border-left: 8px solid #F65314;
-  color: #F65314;
+  border-left: 8px solid #2ecc71;
+  color: #2ecc71;
   font-weight: 300; }
 
 aside > p {
@@ -179,7 +178,7 @@ blockquote {
   font-style: italic;
   color: #555555;
   padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #F65314;
+  border-left: 8px solid #2ecc71;
   line-height: 1.6;
   position: relative;
   background: #f5f5f5; }
@@ -187,7 +186,7 @@ blockquote {
 blockquote::before {
   font-family: Arial;
   content: "\201C";
-  color: #F65314;
+  color: #2ecc71;
   font-size: 5em;
   position: absolute;
   left: 10px;
@@ -208,7 +207,7 @@ figure {
   width: 350px;
   padding: 10px;
   margin: 30px 0 30px 20px;
-  border: 1px solid #F65314; }
+  border: 1px solid #2ecc71; }
 
 figure img {
   text-align: center;
@@ -228,7 +227,7 @@ pre {
   line-height: 1.5em;
   font-size: 11pt;
   overflow: auto;
-  letter-spacing: normal; }
+  letter-spacing: 0.5px; }
 
 pre, pre *, code {
   font-family: "Space Mono", Hack, Fira Code, monospace; }
@@ -268,7 +267,7 @@ a[href$=".pdf"][data-size]:after {
   content: " (PDF, " attr(data-size) ")" url("pdficon.png"); }
 
 address {
-  border-left: 8px solid #F65314;
+  border-left: 8px solid #2ecc71;
   padding: 0.5em 12.5px 0.5em 25px;
   width: 85%;
   margin: 20px; }
@@ -294,16 +293,16 @@ table {
   width: 100%;
   background-color: #ffffff;
   border-collapse: collapse;
-  border: 2px solid #F65314;
+  border: 2px solid #2ecc71;
   color: #000000;
   margin-top: 25px;
   margin-bottom: 25px; }
 
 table td, table th {
-  border: 2px solid #F65314;
+  border: 2px solid #2ecc71;
   padding: 3px; }
 
 table thead {
-  background-color: #F65314; }
+  background-color: #2ecc71; }
 
 /*# sourceMappingURL=paeroa.css.map */
