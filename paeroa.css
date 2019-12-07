@@ -83,12 +83,13 @@ nav {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 700;
-  padding: 20px; }
+  padding-top: 20px; }
 
 nav a {
+  justify-content: space-around;
+  display: inline-flex;
   border: none;
-  margin-left: 5px;
-  margin-right: 5px; }
+  margin-left: 10px; }
 
 img {
   max-width: 100%; }
