@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*
+  PRINT STYLESHEET
+  PAEROA CSS
+
+  http://t94xr.github.io/paeroa-css
+  me@cameronwalker.nz
+
+*/
 /* Display Fonts */
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://free.bboxtype.com/embedfonts/?family=FiraSans:100,200,300,400,500,600,700,800,900");
@@ -10,11 +18,13 @@
 @import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css");
 @import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css");
 @import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap&subset=latin-ext");
+/* $accent-color:  #e74c3c; */
+/* $accent-color:  #e74c3c; */
 /* Main CSS Code */
 html {
   font-family: "Inter", Fira Sans, IBM Plex Sans, Work Sans, system-ui, sans-serif;
   line-height: 1.90em;
-  font-size: calc(1em * 1.25);
+  font-size: 18px;
   color: #444444;
   letter-spacing: -0.75px;
   text-rendering: optimizeLegibility;
@@ -91,8 +101,22 @@ nav a {
   border: none;
   margin-left: 10px; }
 
+div.flexbox {
+  display: flex; }
+
+div.box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left; }
+
 img {
   max-width: 100%; }
+
+img.right {
+  max-width: 60%;
+  float: right;
+  margin-left: 10px; }
 
 li {
   padding-left: 10px; }
@@ -102,51 +126,51 @@ a {
   color: #444444;
   font-weight: 400;
   display: inline-block;
-  border-bottom: 2px solid #2ecc71;
+  border-bottom: 2px solid #FBBC05;
   padding-bottom: 0;
   line-height: 1em; }
 
 a:hover {
-  border-bottom: 3px solid #2ecc71; }
+  border-bottom: 3px solid #FBBC05; }
 
 h1 {
-  font-size: calc(1em * 2.25);
+  font-size: 2.25rem;
   font-weight: 700;
   letter-spacing: -2px;
   padding: 20px 0px 10px 20px;
   margin: 10px 0 20px 0;
-  border-left: 7px solid #2ecc71; }
+  border-left: 7px solid #FBBC05; }
 
 h2 {
-  font-size: calc(1em * 2.0);
+  font-size: 2.0rem;
   font-weight: 600;
   letter-spacing: -2px;
   padding: 0;
   margin: 30px 0 30px 0; }
 
 h3 {
-  font-size: calc(1em * 1.75);
+  font-size: 1.75rem;
   font-weight: 300;
   letter-spacing: -1.5px;
   padding-bottom: 0;
   margin: 30px 0 30px 0; }
 
 h4 {
-  font-size: calc(1em * 1.5);
+  font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: -1.5px;
   padding: 0;
   margin: 30px 0 30px 0; }
 
 h5 {
-  font-size: calc(1em * 1.5);
+  font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: -1.5px;
   padding: 0;
   margin: 30px 0 30px 0; }
 
 h6 {
-  font-size: calc(1em * 1.25);
+  font-size: 1.25rem;
   font-weight: 200;
   letter-spacing: -1.5px;
   padding: 0;
@@ -165,8 +189,8 @@ aside {
   padding-left: 1.25rem;
   margin-left: 1.5rem;
   float: right;
-  border-left: 8px solid #2ecc71;
-  color: #2ecc71;
+  border-left: 8px solid #FBBC05;
+  color: #FBBC05;
   font-weight: 300; }
 
 aside > p {
@@ -179,15 +203,15 @@ blockquote {
   font-style: italic;
   color: #555555;
   padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #2ecc71;
+  border-left: 8px solid #FBBC05;
   line-height: 1.6;
   position: relative;
   background: #f5f5f5; }
 
 blockquote::before {
-  font-family: Arial;
+  font-family: "Arial";
   content: "\201C";
-  color: #2ecc71;
+  color: #FBBC05;
   font-size: 5em;
   position: absolute;
   left: 10px;
@@ -203,12 +227,17 @@ blockquote span {
   font-weight: 700;
   margin-top: 1em; }
 
+.column-2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2; }
+
 figure {
   float: right;
   width: 350px;
   padding: 10px;
   margin: 30px 0 30px 20px;
-  border: 1px solid #2ecc71; }
+  border: 1px solid #FBBC05; }
 
 figure img {
   text-align: center;
@@ -268,7 +297,7 @@ a[href$=".pdf"][data-size]:after {
   content: " (PDF, " attr(data-size) ")" url("pdficon.png"); }
 
 address {
-  border-left: 8px solid #2ecc71;
+  border-left: 8px solid #FBBC05;
   padding: 0.5em 12.5px 0.5em 25px;
   width: 85%;
   margin: 20px; }
@@ -294,16 +323,97 @@ table {
   width: 100%;
   background-color: #ffffff;
   border-collapse: collapse;
-  border: 2px solid #2ecc71;
+  border: 2px solid #FBBC05;
   color: #000000;
   margin-top: 25px;
   margin-bottom: 25px; }
 
 table td, table th {
-  border: 2px solid #2ecc71;
+  border: 2px solid #FBBC05;
   padding: 3px; }
 
 table thead {
-  background-color: #2ecc71; }
+  background-color: #FBBC05;
+  color: #fff; }
+
+ul.specs li strong {
+  width: 140px;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 20px;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-color: #FBBC05; }
+
+ul.specs li {
+  list-style: none; }
+
+span.desc {
+  opacity: 0.5; }
+
+span.mpn {
+  display: inline-block;
+  float: right; }
+
+div.warning {
+  border: 1px solid #e74c3c;
+  background-color: #FFF5F5;
+  padding: 5px 30px 10px 30px;
+  margin: 30px 10% 30px 10%; }
+
+div.warning h6 {
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 15px 0 0 0; }
+
+div.alert-info {
+  border: 5px solid #FFC848;
+  background-color: #FFF9F0;
+  padding: 5px 30px 5px 30px;
+  margin: 30px 10% 30px 10%; }
+
+div.alert-info h6 {
+  color: #FFC848;
+  font-weight: bold;
+  margin: 15px 0 0 0; }
+
+ul.pro {
+  list-style: none;
+  vertical-align: middle; }
+
+ul.pro li::before {
+  content: ""; }
+
+ul.pro li {
+  display: block;
+  background-image: url(https://image.flaticon.com/icons/png/24/391/391175.png);
+  background-repeat: no-repeat;
+  background-position: left top 8px;
+  padding-left: 50px;
+  margin: 20px 0 20px 0; }
+
+ul.neutral {
+  list-style: none;
+  vertical-align: middle; }
+
+ul.neutral li {
+  display: block;
+  background-image: url(https://image.flaticon.com/icons/png/16/25/25232.png);
+  background-repeat: no-repeat;
+  background-position: left top 12px;
+  padding-left: 50px;
+  margin: 20px 0 20px 0; }
+
+ul.con {
+  list-style: none;
+  vertical-align: middle; }
+
+ul.con li {
+  display: block;
+  background-image: url(https://image.flaticon.com/icons/png/16/1828/1828665.png);
+  background-repeat: no-repeat;
+  background-position: left top 8px;
+  padding-left: 50px;
+  margin: 20px 0 20px 0; }
 
 /*# sourceMappingURL=paeroa.css.map */

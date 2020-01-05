@@ -1,3 +1,12 @@
+/*
+  PRINT STYLESHEET
+  PAEROA CSS
+
+  http://t94xr.github.io/paeroa-css
+  me@cameronwalker.nz
+
+*/
+
 @charset "UTF-8";
 
 @import 'scss/fonts';
@@ -7,7 +16,7 @@
 html {
   font-family: $sans-serif-fonts ;
 	line-height: 1.90em;
-  font-size: calc(#{$base-font-size} * 1.25);
+  font-size: $base-font-size;
   color: #444444;
   letter-spacing: -0.75px;
 
@@ -89,12 +98,27 @@ nav a {
   margin-left: 10px;
 }
 
+div.flexbox {
+  display: flex;
+}
+
+div.box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+}
 
 
 
 
 img {
 	max-width: 100%;
+}
+img.right {
+  max-width: 60%;
+  float: right;
+  margin-left: 10px;
 }
 
 li {
@@ -115,7 +139,7 @@ a:hover {
 }
 
 h1 {
-  font-size: calc(#{$base-font-size} * 2.25);
+  font-size: 2.25rem;
   font-weight: weight(bold);
   letter-spacing: -2px;
   padding: 20px 0px 10px 20px;
@@ -123,35 +147,35 @@ h1 {
   border-left: 7px solid $accent-color;
 }
 h2 {
-  font-size: calc(#{$base-font-size} * 2.0);
+  font-size: 2.0rem;
   font-weight: weight(semi-bold);
   letter-spacing: -2px;
   padding: 0;
   margin: 30px 0 30px 0;
 }
 h3 {
-  font-size: calc(#{$base-font-size} * 1.75);
+  font-size: 1.75rem;
   font-weight: weight(light);
   letter-spacing: -1.5px;
   padding-bottom: 0;
   margin: 30px 0 30px 0;
 }
 h4 {
-  font-size: calc(#{$base-font-size} * 1.5);
+  font-size: 1.5rem;
   font-weight: weight(light);
   letter-spacing: -1.5px;
   padding: 0;
   margin: 30px 0 30px 0;
 }
 h5 {
-  font-size: calc(#{$base-font-size} * 1.5);
+  font-size: 1.5rem;
   font-weight: weight(light);
   letter-spacing: -1.5px;
   padding: 0;
   margin: 30px 0 30px 0;
 }
 h6 {
-  font-size: calc(#{$base-font-size} * 1.25);
+  font-size: 1.25rem;
   font-weight: weight(extra-light);
   letter-spacing: -1.5px;
   padding: 0;
@@ -197,7 +221,7 @@ blockquote{
 }
 
 blockquote::before{
-  font-family:Arial;
+  font-family:"Arial";
   content: "\201C";
   color: $accent-color;
   font-size:5em;
@@ -216,6 +240,12 @@ blockquote span{
   font-style: normal;
   font-weight: weight(bold);
   margin-top:1em;
+}
+
+.column-2 {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
 }
 
 figure {
