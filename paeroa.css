@@ -18,7 +18,7 @@
 @import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css");
 @import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css");
 @import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap&subset=latin-ext");
-/* $accent-color:  #e74c3c; */
+/* $accent-color:  #FBBC05; */
 /* $accent-color:  #e74c3c; */
 /* Main CSS Code */
 html {
@@ -126,12 +126,12 @@ a {
   color: #444444;
   font-weight: 400;
   display: inline-block;
-  border-bottom: 2px solid #FBBC05;
+  border-bottom: 2px solid #e74c3c;
   padding-bottom: 0;
   line-height: 1em; }
 
 a:hover {
-  border-bottom: 3px solid #FBBC05; }
+  border-bottom: 3px solid #e74c3c; }
 
 h1 {
   font-size: 2.25rem;
@@ -139,7 +139,7 @@ h1 {
   letter-spacing: -2px;
   padding: 20px 0px 10px 20px;
   margin: 10px 0 20px 0;
-  border-left: 7px solid #FBBC05; }
+  border-left: 7px solid #e74c3c; }
 
 h2 {
   font-size: 2.0rem;
@@ -189,8 +189,8 @@ aside {
   padding-left: 1.25rem;
   margin-left: 1.5rem;
   float: right;
-  border-left: 8px solid #FBBC05;
-  color: #FBBC05;
+  border-left: 8px solid #e74c3c;
+  color: #e74c3c;
   font-weight: 300; }
 
 aside > p {
@@ -203,7 +203,7 @@ blockquote {
   font-style: italic;
   color: #555555;
   padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #FBBC05;
+  border-left: 8px solid #e74c3c;
   line-height: 1.6;
   position: relative;
   background: #f5f5f5; }
@@ -211,7 +211,7 @@ blockquote {
 blockquote::before {
   font-family: "Arial";
   content: "\201C";
-  color: #FBBC05;
+  color: #e74c3c;
   font-size: 5em;
   position: absolute;
   left: 10px;
@@ -237,7 +237,7 @@ figure {
   width: 350px;
   padding: 10px;
   margin: 30px 0 30px 20px;
-  border: 1px solid #FBBC05; }
+  border: 1px solid #e74c3c; }
 
 figure img {
   text-align: center;
@@ -297,7 +297,7 @@ a[href$=".pdf"][data-size]:after {
   content: " (PDF, " attr(data-size) ")" url("pdficon.png"); }
 
 address {
-  border-left: 8px solid #FBBC05;
+  border-left: 8px solid #e74c3c;
   padding: 0.5em 12.5px 0.5em 25px;
   width: 85%;
   margin: 20px; }
@@ -323,17 +323,17 @@ table {
   width: 100%;
   background-color: #ffffff;
   border-collapse: collapse;
-  border: 2px solid #FBBC05;
+  border: 2px solid #e74c3c;
   color: #000000;
   margin-top: 25px;
   margin-bottom: 25px; }
 
 table td, table th {
-  border: 2px solid #FBBC05;
+  border: 2px solid #e74c3c;
   padding: 3px; }
 
 table thead {
-  background-color: #FBBC05;
+  background-color: #e74c3c;
   color: #fff; }
 
 ul.specs li strong {
@@ -343,7 +343,7 @@ ul.specs li strong {
   margin-right: 20px;
   text-align: right;
   text-decoration: underline;
-  text-decoration-color: #FBBC05; }
+  text-decoration-color: #e74c3c; }
 
 ul.specs li {
   list-style: none; }
@@ -356,7 +356,7 @@ span.mpn {
   float: right; }
 
 div.warning {
-  border: 1px solid #e74c3c;
+  border: 3.5px solid #e74c3c;
   background-color: #FFF5F5;
   padding: 5px 30px 10px 30px;
   margin: 30px 10% 30px 10%; }
