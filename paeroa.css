@@ -28,6 +28,7 @@ html {
   color: #444444;
   letter-spacing: -0.75px;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
   /* Open Digits */
   font-feature-settings: 'ss01' 1;
   /* Disambiguation */
@@ -54,6 +55,12 @@ main {
   margin: auto;
   background-color: #fff;
   padding: 25px 50px 25px 50px; }
+
+main.bordered {
+  border: 1px solid #D4D4D4;
+  -webkit-box-shadow: 0px 0px 41px -8px #edeaed;
+  -moz-box-shadow: 0px 0px 41px -8px #edeaed;
+  box-shadow: 0px 0px 41px -8px #edeaed; }
 
 header {
   text-align: center;
