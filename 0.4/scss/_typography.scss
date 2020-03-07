@@ -1,0 +1,102 @@
+html {
+  font-family: $sans-serif-fonts ;
+  font-size: $base-font-size;
+
+
+  /* Open Digits */
+  font-feature-settings: 'ss01' 1,
+    /* Disambiguation */ 'ss02' 1,
+  /* Auto Fractions */   'frac' 1,
+  /* Slashed Zero Digit */ 'zero' 1,
+  /* Upper-case i with Serif */ 'cv08' 1,
+  /* Flat top Three Digit */ 'cv09' 1,
+  /* Open Digits */ 'cv11' 1,
+  /* Stylistic Alternatives */ 'salt' 1;
+}
+
+header h1 {
+	font-weight: weight(extra-bold);
+	font-size: 3em;
+  letter-spacing: -3px;
+  padding: 30px 0 0 0;
+  margin-bottom: 0;
+  border: none;
+}
+header h2 {
+  font-weight: weight(extra-light);
+	font-size: 1.25em;
+  letter-spacing: -2.5px;
+}
+header p {
+	font-weight: weight(extra-light);
+	font-size: 1em;
+}
+nav {
+  text-transform: uppercase;
+	font-size: 1em;
+  font-weight: weight(bold);
+  letter-spacing: 1px;
+}
+
+
+h1 {
+  letter-spacing: -0.5px;
+  padding: 20px 0px 10px 20px;
+  margin: 10px 0 20px 0;
+  border-left: 7px solid $accent-color;
+  font-weight: weight(extra-bold);
+}
+h2 {
+  letter-spacing: -2px;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+h3 {
+  letter-spacing: -1.5px;
+  padding-bottom: 0;
+  margin: 30px 0 30px 0;
+}
+h4 {
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+h5 {
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+h6 {
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+
+pre {
+	line-height: 1.5;
+	font-size: 10pt;
+  letter-spacing: 0;
+}
+pre, pre *, code {
+    font-family: $code-fonts;
+    font-weight: weight(regular);
+    letter-spacing: 0;
+}
+
+p.drop-cap:first-letter {
+    font-size: 4.5rem;
+    float: left;
+    margin-top: .15em;
+}
+article p.first-line::first-line {
+  font-weight: bold;
+}
+article p:first-of-type {
+  font-size: 1.25rem;
+  letter-spacing: -0.75px;
+}
+article p.tag-line {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 26pt;
+  letter-spacing: 0;
+}

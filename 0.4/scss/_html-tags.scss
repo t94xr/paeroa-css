@@ -1,0 +1,194 @@
+img {
+	max-width: 100%;
+}
+img.right {
+  max-width: 60%;
+  float: right;
+  margin-left: 10px;
+}
+ul {
+	line-height: 24pt;
+}
+li {
+	padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: weight(regular);
+  display: inline-block;
+  border-bottom: 2px solid $accent-color;
+  padding-bottom: 0;
+  line-height: 1em;
+}
+a:hover {
+  border-bottom: 3px solid $accent-color;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: weight(bold);
+  letter-spacing: -2px;
+  padding: 20px 0px 10px 20px;
+  margin: 10px 0 20px 0;
+  border-left: 7px solid $accent-color;
+}
+h2 {
+  font-size: 2.0rem;
+  font-weight: weight(semi-bold);
+  letter-spacing: -2px;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+h3 {
+  font-size: 1.75rem;
+  font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding-bottom: 0;
+  margin: 30px 0 30px 0;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+h5 {
+  font-size: 1.5rem;
+  font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+h6 {
+  font-size: 1.25rem;
+  font-weight: weight(extra-light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+
+
+aside {
+    width: 40%;
+    padding-left: 1.25rem;
+    margin-left: 1.5rem;
+    float: right;
+    border-left: 8px solid $accent-color;
+    color: $accent-color;
+    font-weight: weight(light);
+		margin-bottom: 10px;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+blockquote{
+  width:85%;
+  margin:50px auto;
+  color: #555555;
+  padding:0.75em 30px 0.75em 75px;
+  border-left: 8px solid $accent-color ;
+  line-height:1.6;
+  position: relative;
+  background:#f5f5f5;
+}
+
+blockquote::before{
+  font-family:"Arial";
+  content: "\201C";
+  color: $accent-color;
+  font-size:5em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: weight(bold);
+  margin-top:1em;
+}
+
+figure {
+	float: right;
+	width: 350px;
+	padding: 10px;
+  margin: 30px 0 30px 20px;
+	border: 1px solid $accent-color;
+}
+figure img {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+figure figcaption {
+	padding-top: 10px;
+	font-size: small;
+	line-height: 1.5em;
+	font-weight: weight(light);
+}
+pre {
+	background-color: rgb(40,43,46);
+	padding: 25px;
+	color: white;
+	overflow: auto;
+}
+samp {
+  letter-spacing: normal;
+  font-size: 11pt;
+}
+
+time {
+  opacity: 0.6;
+	letter-spacing: -0.5px;
+}
+
+dl dt {
+  font-weight: weight(bold);
+}
+dl dd {
+  font-weight: weight(light);
+  font-style: italic;
+}
+
+/* Add " (PDF)" text after links that go to PDFs */
+a[href$=".pdf"]:after { content: " (PDF)" url("pdficon.png"); }
+
+/* If file size specified as data attribute, use that too */
+a[href$=".pdf"][data-size]:after { content: " (PDF, " attr(data-size) ")" url("pdficon.png"); }
+
+address {
+	border-left: 8px solid $accent-color;
+	padding:0.5em 12.5px 0.5em 25px;
+	width:85%;
+	margin: 20px
+
+}
+
+kbd {
+    font-family: $code-fonts ;
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.95em;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+q {
+	font-style: italic;
+  quotes: "“" "”";
+}

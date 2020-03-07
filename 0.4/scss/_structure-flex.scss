@@ -1,0 +1,31 @@
+header section.left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+}
+header section.right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: right;
+}
+
+@media (max-width: 959px) {
+  header section.left {
+    text-align: center;
+  }
+  header section.right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  main {
+    padding: 5px;
+  }
+}
+@media (min-width: 960px) {
+  header {
+    display: flex;
+  }
+}

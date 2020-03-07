@@ -1,0 +1,36 @@
+$font-weights: (
+    "thin": 100,
+    "extra-light": 200,
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semi-bold": 600,
+    "bold": 700,
+    "extra-bold": 800,
+    "black": 900
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+$sans-serif-fonts:  "Inter", Arial, system-ui, sans-serif;
+$code-fonts:  "JetBrains Mono", monospace;
+
+$base-font-size: 11pt;
+$base-font-color: #444444;
+
+$accent-color:  #34A853;
+
+/*
+Microsoft Red #F65314
+Microsft yellow #FFBB00
+Microsft Green #7CBB00
+Microsoft Blue #00A1F1
+
+Google Red #EA4335
+Google Yellow #FBBC05
+Google Green #34A853
+Google Blue #4285F4
+
+*/

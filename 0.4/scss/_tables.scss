@@ -1,0 +1,20 @@
+
+table {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border: 2px solid $accent-color;
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+table td, table th {
+  border: 2px solid $accent-color;
+  padding: 3px;
+}
+
+table thead {
+  background-color: $accent-color;
+  color: #fff;
+}

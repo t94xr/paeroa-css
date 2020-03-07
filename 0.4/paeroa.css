@@ -1,0 +1,528 @@
+@charset "UTF-8";
+/*
+  PAEROA CSS
+  version: 0.4
+
+  http://t94xr.github.io/paeroa-css
+  me@cameronwalker.nz
+
+*/
+/* Display Fonts */
+@import url("//rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif; } }
+/*
+JetBrains Mono - CDN
+LICENSE: JetBrains Mono typeface is available under the Apache 2.0 license and can be used free of charge, for both commercial and non-commercial purposes.
+*/
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff/JetBrainsMono-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff2/JetBrainsMono-Italic.woff2") format("woff2"), url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff/JetBrainsMono-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff2/JetBrainsMono-Medium.woff2") format("woff2"), url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff/JetBrainsMono-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff2/JetBrainsMono-Medium-Italic.woff2") format("woff2"), url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff/JetBrainsMono-Medium-Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff2/JetBrainsMono-Bold.woff2") format("woff2"), url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff/JetBrainsMono-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff2/JetBrainsMono-Bold-Italic.woff2") format("woff2"), url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff/JetBrainsMono-Bold-Italic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic; }
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff2/JetBrainsMono-ExtraBold.woff2") format("woff2"), url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff/JetBrainsMono-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2") format("woff2"), url("//cdn.jsdelivr.net/gh/jetbrains/jetbrainsmono@1.0.1/web/woff/JetBrainsMono-ExtraBold-Italic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic; }
+/*
+Microsoft Red #F65314
+Microsft yellow #FFBB00
+Microsft Green #7CBB00
+Microsoft Blue #00A1F1
+
+Google Red #EA4335
+Google Yellow #FBBC05
+Google Green #34A853
+Google Blue #4285F4
+
+*/
+html {
+  line-height: 20pt;
+  color: #444444;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #F7F7F7;
+  padding-top: 75px; }
+
+::selection {
+  background-color: #34A853;
+  color: #fff; }
+
+main {
+  max-width: 1280px;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px 50px 25px 50px;
+  margin-bottom: 200px;
+  border-top: 5px solid #34A853; }
+
+main.bordered {
+  border: 1px solid #D4D4D4;
+  -webkit-box-shadow: 0px 0px 41px -8px #edeaed;
+  -moz-box-shadow: 0px 0px 41px -8px #edeaed;
+  box-shadow: 0px 0px 41px -8px #edeaed; }
+
+header {
+  text-align: center;
+  margin-bottom: 25px; }
+
+header section.left a {
+  text-decoration: none;
+  border: 0; }
+
+nav {
+  padding-top: 20px; }
+
+nav a {
+  justify-content: space-around;
+  display: inline-flex;
+  border: none;
+  margin-left: 10px; }
+
+footer {
+  border-top: 1px gray solid;
+  margin-top: 50px;
+  font-size: small; }
+
+header section.left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left; }
+
+header section.right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: right; }
+
+@media (max-width: 959px) {
+  header section.left {
+    text-align: center; }
+
+  header section.right {
+    text-align: center;
+    margin-top: 20px; }
+
+  main {
+    padding: 5px; } }
+@media (min-width: 960px) {
+  header {
+    display: flex; } }
+table {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border: 2px solid #34A853;
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+table td, table th {
+  border: 2px solid #34A853;
+  padding: 3px; }
+
+table thead {
+  background-color: #34A853;
+  color: #fff; }
+
+img {
+  max-width: 100%; }
+
+img.right {
+  max-width: 60%;
+  float: right;
+  margin-left: 10px; }
+
+ul {
+  line-height: 24pt; }
+
+li {
+  padding-left: 10px; }
+
+a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 400;
+  display: inline-block;
+  border-bottom: 2px solid #34A853;
+  padding-bottom: 0;
+  line-height: 1em; }
+
+a:hover {
+  border-bottom: 3px solid #34A853; }
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  padding: 20px 0px 10px 20px;
+  margin: 10px 0 20px 0;
+  border-left: 7px solid #34A853; }
+
+h2 {
+  font-size: 2.0rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  padding-bottom: 0;
+  margin: 30px 0 30px 0; }
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 200;
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+aside {
+  width: 40%;
+  padding-left: 1.25rem;
+  margin-left: 1.5rem;
+  float: right;
+  border-left: 8px solid #34A853;
+  color: #34A853;
+  font-weight: 300;
+  margin-bottom: 10px; }
+
+aside > p {
+  margin: .5rem; }
+
+blockquote {
+  width: 85%;
+  margin: 50px auto;
+  color: #555555;
+  padding: 0.75em 30px 0.75em 75px;
+  border-left: 8px solid #34A853;
+  line-height: 1.6;
+  position: relative;
+  background: #f5f5f5; }
+
+blockquote::before {
+  font-family: "Arial";
+  content: "\201C";
+  color: #34A853;
+  font-size: 5em;
+  position: absolute;
+  left: 10px;
+  top: -10px; }
+
+blockquote::after {
+  content: ''; }
+
+blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 1em; }
+
+figure {
+  float: right;
+  width: 350px;
+  padding: 10px;
+  margin: 30px 0 30px 20px;
+  border: 1px solid #34A853; }
+
+figure img {
+  text-align: center;
+  display: block;
+  margin: 0 auto; }
+
+figure figcaption {
+  padding-top: 10px;
+  font-size: small;
+  line-height: 1.5em;
+  font-weight: 300; }
+
+pre {
+  background-color: #282b2e;
+  padding: 25px;
+  color: white;
+  overflow: auto; }
+
+samp {
+  letter-spacing: normal;
+  font-size: 11pt; }
+
+time {
+  opacity: 0.6;
+  letter-spacing: -0.5px; }
+
+dl dt {
+  font-weight: 700; }
+
+dl dd {
+  font-weight: 300;
+  font-style: italic; }
+
+/* Add " (PDF)" text after links that go to PDFs */
+a[href$=".pdf"]:after {
+  content: " (PDF)" url("pdficon.png"); }
+
+/* If file size specified as data attribute, use that too */
+a[href$=".pdf"][data-size]:after {
+  content: " (PDF, " attr(data-size) ")" url("pdficon.png"); }
+
+address {
+  border-left: 8px solid #34A853;
+  padding: 0.5em 12.5px 0.5em 25px;
+  width: 85%;
+  margin: 20px; }
+
+kbd {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: 0.95em;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap; }
+
+q {
+  font-style: italic;
+  quotes: "“" "”"; }
+
+html {
+  font-family: "Inter", Arial, system-ui, sans-serif;
+  font-size: 11pt;
+  /* Open Digits */
+  font-feature-settings: "ss01" 1, "ss02" 1, "frac" 1, "zero" 1, "cv08" 1, "cv09" 1, "cv11" 1, "salt" 1; }
+
+header h1 {
+  font-weight: 800;
+  font-size: 3em;
+  letter-spacing: -3px;
+  padding: 30px 0 0 0;
+  margin-bottom: 0;
+  border: none; }
+
+header h2 {
+  font-weight: 200;
+  font-size: 1.25em;
+  letter-spacing: -2.5px; }
+
+header p {
+  font-weight: 200;
+  font-size: 1em; }
+
+nav {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+h1 {
+  letter-spacing: -0.5px;
+  padding: 20px 0px 10px 20px;
+  margin: 10px 0 20px 0;
+  border-left: 7px solid #34A853;
+  font-weight: 800; }
+
+h2 {
+  letter-spacing: -2px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+h3 {
+  letter-spacing: -1.5px;
+  padding-bottom: 0;
+  margin: 30px 0 30px 0; }
+
+h4 {
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+h5 {
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+h6 {
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0; }
+
+pre {
+  line-height: 1.5;
+  font-size: 10pt;
+  letter-spacing: 0; }
+
+pre, pre *, code {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+  letter-spacing: 0; }
+
+p.drop-cap:first-letter {
+  font-size: 4.5rem;
+  float: left;
+  margin-top: .15em; }
+
+article p.first-line::first-line {
+  font-weight: bold; }
+
+article p:first-of-type {
+  font-size: 1.25rem;
+  letter-spacing: -0.75px; }
+
+article p.tag-line {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 26pt;
+  letter-spacing: 0; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.column-2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2; }
+
+ul.specs li strong {
+  width: 150px;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 20px;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-color: #34A853;
+  letter-spacing: -0.5px; }
+
+ul.specs li {
+  list-style: none; }
+
+span.desc {
+  opacity: 0.5; }
+
+span.mpn {
+  display: inline-block;
+  float: right; }
+
+div.warning {
+  border: 3.5px solid #e74c3c;
+  background-color: #FFF5F5;
+  padding: 5px 30px 10px 30px;
+  margin: 30px 10% 30px 10%; }
+
+div.warning h6 {
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 15px 0 0 0; }
+
+div.alert-info {
+  border: 5px solid #FFC848;
+  background-color: #FFF9F0;
+  padding: 5px 30px 5px 30px;
+  margin: 30px 10% 30px 10%; }
+
+div.alert-info h6 {
+  color: #FFC848;
+  font-weight: bold;
+  margin: 15px 0 0 0; }
+
+ul.pro {
+  list-style: none;
+  vertical-align: middle; }
+
+ul.pro li::before {
+  content: ""; }
+
+ul.pro li {
+  display: block;
+  background-image: url(https://image.flaticon.com/icons/png/24/391/391175.png);
+  background-repeat: no-repeat;
+  background-position: left top 8px;
+  padding-left: 50px;
+  margin: 20px 0 20px 0; }
+
+ul.neutral {
+  list-style: none;
+  vertical-align: middle; }
+
+ul.neutral li {
+  display: block;
+  background-image: url(https://image.flaticon.com/icons/png/16/25/25232.png);
+  background-repeat: no-repeat;
+  background-position: left top 12px;
+  padding-left: 50px;
+  margin: 20px 0 20px 0; }
+
+ul.con {
+  list-style: none;
+  vertical-align: middle; }
+
+ul.con li {
+  display: block;
+  background-image: url(https://image.flaticon.com/icons/png/16/1828/1828665.png);
+  background-repeat: no-repeat;
+  background-position: left top 8px;
+  padding-left: 50px;
+  margin: 20px 0 20px 0; }
+
+a[href$=".iso"] {
+  border-bottom: 0px; }
+
+a[href$=".iso"]:before {
+  content: "[ISO] "; }
+
+/*# sourceMappingURL=paeroa.css.map */

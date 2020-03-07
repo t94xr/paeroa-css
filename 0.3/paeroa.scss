@@ -1,23 +1,28 @@
 /*
   PRINT STYLESHEET
   PAEROA CSS
+  version: 0.30**
 
   http://t94xr.github.io/paeroa-css
   me@cameronwalker.nz
 
 */
+
 @charset "UTF-8";
 
-@import 'scss_print/fonts';
-@import 'scss_print/variables';
+@import 'scss/fonts';
+@import 'scss/variables';
 
 /* Main CSS Code */
 html {
   font-family: $sans-serif-fonts ;
 	line-height: 1.90em;
   font-size: $base-font-size;
+  color: #444444;
+  letter-spacing: -0.75px;
 
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 
   /* Open Digits */
   font-feature-settings: 'ss01' 1;
@@ -37,13 +42,24 @@ html {
   font-feature-settings: 'salt' 1;
 }
 body {
-  background-color: #FFF;
+  background-color: #F7F7F7;
+  padding-top: 50px;
 }
 main {
+	max-width: 1280px;
+	margin: auto;
+  background-color: #fff;
+  padding: 25px 50px 25px 50px;
+}
+main.bordered {
+  border: 1px solid #D4D4D4;
+  -webkit-box-shadow: 0px 0px 41px -8px rgba(237,234,237,1);
+  -moz-box-shadow: 0px 0px 41px -8px rgba(237,234,237,1);
+  box-shadow: 0px 0px 41px -8px rgba(237,234,237,1);
 }
 header {
 	text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   display: flex;
 }
 header section.left {
@@ -71,6 +87,7 @@ header h1 {
 header h2 {
   font-weight: weight(extra-light);
 	font-size: 1.25em;
+  letter-spacing: -2.5px;
 }
 header p {
 	font-weight: weight(extra-light);
@@ -100,11 +117,11 @@ div.box {
   text-align: left;
 }
 
-img {
-	max-width: 40%;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 
+
+
+img {
+	max-width: 100%;
 }
 img.right {
   max-width: 60%;
@@ -121,7 +138,7 @@ a {
   color: #444444;
   font-weight: weight(regular);
   display: inline-block;
-  border-bottom: 1px solid $accent-color;
+  border-bottom: 2px solid $accent-color;
   padding-bottom: 0;
   line-height: 1em;
 }
@@ -130,33 +147,47 @@ a:hover {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: weight(bold);
-  padding: 10px 0px 10px 10px;
+  letter-spacing: -2px;
+  padding: 20px 0px 10px 20px;
   margin: 10px 0 20px 0;
   border-left: 7px solid $accent-color;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.0rem;
   font-weight: weight(semi-bold);
+  letter-spacing: -2px;
   padding: 0;
   margin: 30px 0 30px 0;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding-bottom: 0;
+  margin: 30px 0 30px 0;
 }
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
 }
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: weight(light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
 }
 h6 {
   font-size: 1.25rem;
   font-weight: weight(extra-light);
+  letter-spacing: -1.5px;
+  padding: 0;
+  margin: 30px 0 30px 0;
 }
 
 .uppercase {
@@ -186,13 +217,15 @@ aside > p {
 
 blockquote{
   font-size: 1em;
-  width: 90%;
-  margin: 15px auto;
+  width:85%;
+  margin:50px auto;
   font-style: italic;
-  padding:1em 1px 1em 50px;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
   border-left: 8px solid $accent-color ;
   line-height:1.6;
   position: relative;
+  background:#f5f5f5;
 }
 
 blockquote::before{
@@ -232,7 +265,6 @@ figure {
 }
 figure img {
 	text-align: center;
-  max-width: 100%;
 	display: block;
 	margin: 0 auto;
 }
@@ -243,13 +275,13 @@ figure figcaption {
 	font-weight: weight(light);
 }
 pre {
-	padding: 15px;
-	color: #000;
+	background-color: rgb(40,43,46);
+	padding: 25px;
+	color: white;
 	line-height: 1.5em;
-	font-size: 9pt;
-  overflow-wrap: break-word;
-  max-width: 100%;
-
+	font-size: 11pt;
+	overflow: auto;
+  letter-spacing: 0.5px;
 }
 pre, pre *, code {
     font-family: $code-fonts;
@@ -317,14 +349,5 @@ q {
   quotes: "“" "”";
 }
 
-
-/* PRINT PAGE SPECIFIC
-
-article a[href]:after {
-  content: " (" attr(href) ")";
-}
-
- PRINT PAGE SPECIFIC END */
-
-@import 'scss_print/tables';
-@import 'scss_print/extras';
+@import 'scss/tables';
+@import 'scss/extras';
