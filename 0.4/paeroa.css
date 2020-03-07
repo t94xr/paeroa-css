@@ -5,7 +5,7 @@
 
   http://t94xr.github.io/paeroa-css
   me@cameronwalker.nz
-
+as
 */
 /* Display Fonts */
 @import url("//rsms.me/inter/inter.css");
@@ -70,7 +70,7 @@ Google Blue #4285F4
 
 */
 html {
-  line-height: 20pt;
+  line-height: 24pt;
   color: #444444;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth; }
@@ -344,7 +344,7 @@ q {
 
 html {
   font-family: "Inter", Arial, system-ui, sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   /* Open Digits */
   font-feature-settings: "ss01" 1, "ss02" 1, "frac" 1, "zero" 1, "cv08" 1, "cv09" 1, "cv11" 1, "salt" 1; }
 
