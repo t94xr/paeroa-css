@@ -344,7 +344,7 @@ q {
 
 html {
   font-family: "Inter", Arial, system-ui, sans-serif;
-  font-size: 11pt;
+  font-size: 12pt;
   /* Open Digits */
   font-feature-settings: "ss01" 1, "ss02" 1, "frac" 1, "zero" 1, "cv08" 1, "cv09" 1, "cv11" 1, "salt" 1; }
 
